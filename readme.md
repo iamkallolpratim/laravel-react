@@ -1,1 +1,1 @@
-##Crypto-Tracker with the implementation of Laravel and React
+## Crypto-Tracker with the implementation of Laravel and React
