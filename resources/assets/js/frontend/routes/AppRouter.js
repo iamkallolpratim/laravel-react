@@ -9,8 +9,8 @@ const HomeContainer = Loadable({
     loading: Loading
 });
 
-const AboutContainer = Loadable({
-    loader: () => import('../containers/about/about'),
+const NewsContainer = Loadable({
+    loader: () => import('../containers/news/news'),
     loading: Loading
 });
 
@@ -37,8 +37,8 @@ const AppRouter = ({...rest}) => {
             <Route
                 {...rest}
                 exact
-                path={`${rest.match.path}about`}
-                render={props => <AboutContainer {...props} />}
+                path={`${rest.match.path}news`}
+                render={props => <NewsContainer {...props} />}
             />
             <Route
                 {...rest}

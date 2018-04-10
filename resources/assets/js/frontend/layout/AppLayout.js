@@ -22,9 +22,9 @@ class AppLayout extends Component {
                               selectedKeys={[location.pathname]} style={{
                             lineHeight: '64px'
                         }}>
-                            <Menu.Item key={`${match.path}about`}>
-                                <NavLink exact to={`${match.path}about`}><Icon type="info"/>
-                                    <span>About Us</span>
+                            <Menu.Item key={`${match.path}news`}>
+                                <NavLink exact to={`${match.path}news`}><Icon type="info"/>
+                                <span>News</span>
                                 </NavLink>
                             </Menu.Item>
                             <Menu.Item key={`${match.path}contact-us`}>
