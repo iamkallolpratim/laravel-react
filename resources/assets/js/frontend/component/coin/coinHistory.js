@@ -22,7 +22,6 @@ export default class CoinHistory extends Component {
     return moment.unix(tickItem).format('LL');
   }
   render() {
-    console.log(this.props.coinHistory.Data);
     return (<Card title="Last 30 Days Data">
       <AreaChart width={830} height={340} data={this.props.coinHistory.Data} margin={{
           top: 10,

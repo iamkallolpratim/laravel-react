@@ -1,7 +1,7 @@
 class BlockchainApi{
     static getAllCoins()
     {
-        return fetch('https://api.coinmarketcap.com/v1/ticker/?limit=12', {
+        return fetch('https://api.coinmarketcap.com/v1/ticker/?limit=100', {
             credentials: 'same-origin'
         }).then(response => {
             return response.json();

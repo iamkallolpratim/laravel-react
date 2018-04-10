@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {Icon} from 'antd';
 import {Link} from 'react-router-dom';
-import {images} from '../../utils/icons'
+import {imageLink} from '../../utils/icons'
+
+
 
 export default class SuperHeroList extends Component {
 
@@ -10,10 +12,11 @@ export default class SuperHeroList extends Component {
     this.singleCoin = this.singleCoin.bind(this);
   }
 
+
   singleCoin(coin) {
     const {match} = this.props;
     return (<tr key={coin.id}>
-      <td><img src={images[coin.symbol]} alt={coin.name} className="icon"/></td>
+      <td><img src={imageLink+`${coin.symbol}`} alt={coin.name} className="icon"/></td>
       <td>
         <Link to={`${match.path}coins/${coin.id}&symbol=${coin.symbol}`}>{coin.name}</Link>
       </td>

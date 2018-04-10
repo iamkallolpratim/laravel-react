@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {images} from '../../utils/icons'
+import {imageLink} from '../../utils/icons'
 import {Button, Popover,Icon} from 'antd';
 
 export default class CoinInfo extends Component {
@@ -91,7 +91,7 @@ export default class CoinInfo extends Component {
         this.props.coinDetails[0]
           ? <div className="ant-card ant-card-bordered ant-card-hoverable">
               <div className="ant-card-cover coin-image">
-                <img className="spin-image" src={images[this.props.coinDetails[0].symbol]} alt={this.props.coinDetails[0].name}/>
+                <img className="spin-image" src={imageLink+`${this.props.coinDetails[0].symbol}`} alt={this.props.coinDetails[0].name}/>
               </div>
               <div className="ant-card-body">
                 <div className="ant-card-meta">
